@@ -1,0 +1,4 @@
+
+export const PRODUCT_RQUEST = "PRODUCT_RQUEST";
+export const PRODUCT_ERROR = "PRODUCT_ERROR";
+export const PRODCUT_SUCCESS = "PRODCUT_SUCCESS";

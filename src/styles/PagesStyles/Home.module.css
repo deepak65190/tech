@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.bodyContainer{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+}
+.container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    
+    
+    justify-content: space-between;
+    
+    background-color: aliceblue;
+
+}
+
+/* .container>div:nth-child(1){
+    width: 30%;
+    height: auto;
+    background-color: teal;
+}
+.container>div:nth-child(2){
+    width: 65%;
+    height: auto;
+    background-color:thistle;
+} */
+.card{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+h1{
+    margin:10px 0px ;
+}
+.filters{
+    display: flex;
+     /* position: fixed;
+     width: 80%;
+  top:50px; */
+  background-color: rgb(240,248,255) ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.filters>div{
+   margin-top: 10px;
+    
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    .card{
+   
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.container{
+    width: 100%;
+    
+}
+ .filters{ width: 100%;
+          display: flex;
+          flex-direction: column;
+         
+    }
+}
+
+@media all and (min-width:0px) and (max-width:767px) {
+    .card{
+   
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.input{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    
+}
+.filters{width: 100%;
+          display: flex;
+          flex-direction: column;
+    }
+    .input{
+    width: 100%;
+    background-color: #617aad;
+}
+}

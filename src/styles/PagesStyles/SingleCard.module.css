@@ -1,0 +1,91 @@
+.singleCard {
+  width: auto;
+  height: auto;
+  text-align: justify;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-color: #1a202c;
+  color: white;
+}
+.avtarImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* //filters */
+/* navbar css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  background-color: rgb(97, 122, 173);
+  border-radius: 10px;
+  /* position: fixed;
+  top: 0;
+  
+  margin-left: 10%; */
+
+  
+}
+.active {
+  text-decoration: none;
+  font-weight: bolder;
+  color: red;
+}
+
+.default {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+/* team card */
+.teamContainer{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  background-color: aliceblue;
+}
+.teamContainer{
+   margin: auto;
+   margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.teamCard{
+  
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-color: #1a202c;
+  color: white;
+  
+}
+.teamImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media all and (min-width:768px) and (max-width:1024px){
+  .navbar{
+    width: 100%;
+  }
+  .teamContainer{
+ grid-template-columns: repeat(2,1fr);
+  }
+}
+@media all and (min-width:0px) and (max-width:767px){
+  .navbar{
+    width: 100%;
+  }
+  .teamContainer{
+ grid-template-columns: repeat(1,1fr);
+  }
+}
